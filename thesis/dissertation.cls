@@ -15,20 +15,14 @@
 
 
 %% Import packages
-\RequirePackage{fontawesome}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
-%\RequirePackage{txfonts}
 \usepackage{physics}
-\usepackage{mathptmx}
 \DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
-\usepackage{amsmath}
 
 \RequirePackage[english]{babel}
 \RequirePackage{calc}
 \RequirePackage[nooneline,footnotesize]{caption}
-%\RequirePackage{chapterbib}
-\RequirePackage{etaremune}
 \RequirePackage{fancyhdr}
 \RequirePackage[flushmargin,hang]{footmisc}
 \RequirePackage{ifpdf}
@@ -36,7 +30,6 @@
 \ifxetex
     \RequirePackage[xetex]{geometry}
     \RequirePackage[xetex]{graphicx}
-    %\usepackage[bookmarks=false,hidelinks]{hyperref}
     \RequirePackage[xetex,bookmarks=false,hidelinks]{hyperref}
     \RequirePackage{fontspec}
     \RequirePackage{xltxtra}
@@ -53,17 +46,12 @@
         \fi
     \RequirePackage[utf8]{inputenc}
 \fi
-\RequirePackage{rotating}
-\RequirePackage{tablefootnote}
 \RequirePackage{lettrine}
-\RequirePackage{metalogo}
 \RequirePackage[numbers,sort&compress]{natbib}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[noindentafter]{titlesec}
 \RequirePackage{titletoc}
-%\RequirePackage[nottoc]{tocbibind}
 \RequirePackage[usenames,dvipsnames,svgnames,table,xcdraw]{xcolor}
-%\RequirePackage[table]{xcolor}
 \RequirePackage{tikz}
 
 %% If the document is not compiled with XeLaTeX, we need to use the native
@@ -73,95 +61,57 @@
 \fi
 
 \if@nativefonts
-    %% The native font is Utopia Regular with Fourier math. We use Latin Modern
-%% as a fallback, since Utopia lacks support for sans-serif and monospace.
+    \RequirePackage[T1]{fontenc}
+    \RequirePackage[utf8]{inputenc}
+    \RequirePackage{libertine}
+    \RequirePackage[libertine]{newtxmath}
+    \RequirePackage[scaled=0.95]{inconsolata}
 
-    %\RequirePackage{libertine}
-    %\RequirePackage{libertinust1math}
-    %\RequirePackage[T1]{fontenc}
-    %\RequirePackage[utf8]{inputenc}
-    
-    %\RequirePackage{fourier}
-    %% The style for titles is small caps.
     \def\titlefont{\rmfamily}
-    \def\titleshape{\scshape}
+    \def\titleshape{}
     \def\titlestyle{\titlefont\titleshape\bfseries}
-    \if@print
-        \def\headerstyle{\titlefont\titleshape}
-        %\def\headerstyle{\titlefont\titleshape\bfseries}
-    \else
-        \def\headerstyle{\titlefont\titleshape}
-        \fi
+    \def\headerstyle{\titlefont\titleshape}
 \else
-    %% The TU Delft house style fonts are Bookman Old Style (serif) for titles
-    %% and Tahoma (sans-serif) for text. Apart from these, we use Courier New
-    %% for monospace and Cambria for math.
+    %% Use Libertinus fonts for XeLaTeX compilation
     \RequirePackage{unicode-math}
 
     \setmainfont[Path = fonts/libertinus/, ItalicFont=libertinusserif-italic.otf, BoldFont=libertinusserif-bold.otf, BoldItalicFont=libertinusserif-bolditalic.otf]{libertinusserif-regular.otf}
     \setsansfont[Path = fonts/libertinus/, BoldFont=libertinussans-bold.otf, ItalicFont=libertinussans-italic.otf]{libertinussans-regular.otf}
     \setmathfont[Path = fonts/libertinus/]{libertinusmath-regular.otf}
     \setmonofont[Scale=MatchLowercase, Path=fonts/inconsolata/]{Inconsolata-Regular.ttf}
-    %% The default style for text is Tahoma (sans-serif).
-    %\renewcommand*\familydefault{\sfdefault}
-    %% The default style for titles is Bookman Old Style (serif).
     \def\titlefont{\rmfamily}
     \def\titleshape{}
-    \if@print
-        \def\titlestyle{\titlefont\titleshape}
-        %\def\titlestyle{\titlefont\titleshape\bfseries}
-    \else
-        \def\titlestyle{\titlefont\titleshape}
-    \fi
+    \def\titlestyle{\titlefont\titleshape}
     \def\headerstyle{\titlestyle}
 \fi
 
-\RequirePackage{paralist}
 \RequirePackage[noabbrev]{cleveref}
 \Crefname{enumi}{Step}{Steps}
 \crefname{enumi}{step}{steps}
 
-\RequirePackage{pbox}
-\RequirePackage{tabularx}
-\RequirePackage{soul}
-
 \RequirePackage{array}
-
-\RequirePackage{wrapfig}
-
 \RequirePackage{pifont}
-
 \RequirePackage{textcomp}
-\RequirePackage{slashbox}
-
-
-\RequirePackage{mdframed}
-\mdfsetup{skipbelow=3pt,skipabove=3pt,innerleftmargin=2.5pt,innerrightmargin=2.5pt,innertopmargin=2.5pt,innerbottommargin=2.5pt}
-\let\oldmdframed\mdframed
-\def\mdframed{\oldmdframed\noindent\ignorespaces}
 
 \RequirePackage{microtype}
 \RequirePackage{multirow}
 
 \definecolor{light-gray}{gray}{0.95}
-\definecolor{mgreen}{HTML}{009901}
 
 \RequirePackage{listings}
 
-\lstset{ %
-  backgroundcolor=\color{light-gray},   % choose the background color; you must add \RequirePackage{color} or \RequirePackage{xcolor}
-  %  keywordstyle=\color{blue},       % keyword style
-  language=C,                 % the language of the code
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-  numbersep=5pt,                   % how far the line-numbers are from the code
-  %  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                % show spaces everywhere adding particular underscores; it
-  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+\lstset{
+  backgroundcolor=\color{light-gray},
+  language=C,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  stepnumber=1,
   numberstyle=\tiny,
-  breaklines        = true,
-  breakatwhitespace = true,
-  breakindent       = 2ex,
-  escapechar        = *,
+  breaklines=true,
+  breakatwhitespace=true,
+  breakindent=2ex,
+  escapechar=*,
   basicstyle=\scriptsize\ttfamily
 }
 
@@ -169,69 +119,15 @@
 \renewcommand{\lstlistingname}{Example}
 \crefname{lstlisting}{Example}{Examples}
 
-% *** GRAPHICS RELATED PACKAGES ***
-%
-% \RequirePackage{subfig} % deprecated and replaced by:
 \usepackage{subcaption}
-%
-%% Make figures appear in the same section (to avoid a bunch of figures at the end of a section)
+\RequirePackage{float}
 \RequirePackage[section]{placeins}
-% declare the path(s) where your graphic files are
-\graphicspath{{figs/},{asats/figs/},{last-line/figs/},{travis-analysis/figs/},{watchdog-tse/figs/},{debugging/figs/},{debugging/img/},{images/},{img/},{title/logos/}}
-% and their extensions so you won't have to specify these with
-% every instance of \includegraphics
 \DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
 
 
 \RequirePackage{enumitem}
-%% \setlist{before=\setlength{\rightmargin}{0.17cm}}
-
-%% \setlist[enumerate]{
-%%   nolistsep,label=\arabic{*}),ref=\arabic{*},leftmargin=0.65cm,noitemsep
-%% }
-
-%% \setlist[itemize]{
-%%   nolistsep,label=\arabic{*}),ref=\arabic{*},noitemsep
-%% }
-
-\newlist{rqlist}{itemize}{2}
-\setlist[rqlist]{
-  nolistsep,leftmargin=1.65cm,rightmargin=0.9cm
-}
-
-\RequirePackage{framed}
-\let\oldframed\framed
-\def\framed{\oldframed\noindent\ignorespaces}
-
 \RequirePackage{booktabs}
-
-\RequirePackage{relsize}
-\renewcommand*{\UrlFont}{\ttfamily\relax}
-
-\RequirePackage{wasysym}
-\RequirePackage{amssymb}
-\RequirePackage{mathptmx}
-
-% number circles. They go well together with my favorite way of
-% labeling stuff in pictures.
-\RequirePackage{tikz}
-
-\RequirePackage{marvosym}
-\RequirePackage{pbox}
-
 \RequirePackage{multicol}
-
-\RequirePackage{algorithm}
-\RequirePackage{algpseudocode}
-
-
-\newcommand{\ahref}[2]{\href{#1}{\nolinkurl{#2}}}
-% number circles. They go well together with my favorite way of
-% labeling stuff in pictures.
-\newcommand\circled[1]{\raisebox{1.2pt}{\textcircled{\hspace{0.33pt}\scriptsize{\raisebox{-.1pt}{#1}}}}}
-
-\RequirePackage[outdir=./img/]{epstopdf}
-\RequirePackage[export]{adjustbox}
 
 \RequirePackage[nomain,acronym,nonumberlist,style=list]{glossaries} % nomain, if you define glossaries in a file, and you use \include{INP-00-glossary}
 
@@ -242,27 +138,13 @@
 \clubpenalty=1000
 \widowpenalty=1000
 
-%% Define the TU Delft house style colors.
+%% Define colors for document structure
 \definecolor{chapter-blue}{cmyk}{1,0.5,0,0.2}
 \definecolor{section-blue1}{cmyk}{0.8,0.4,0,0}
-\definecolor{section-blue2}{cmyk}{1,1,0,0.4}
 \definecolor{drocap-color}{cmyk}{0.8,0.4,0,0}
 \definecolor{mark-color}{cmyk}{0.6,0.3,0,0}
-
 \definecolor{atlarge-black}{cmyk}{0,0,0,1}
 \definecolor{atlarge-white}{cmyk}{0,0,0,0}
-\definecolor{tudelft-sea-green}{cmyk}{0.54,0,0.32,0}
-\definecolor{tudelft-green}{cmyk}{1,0.15,0.4,0}
-\definecolor{tudelft-dark-blue}{cmyk}{1,0.66,0,0.4}
-\definecolor{tudelft-purple}{cmyk}{0.98,1,0,0.35}
-\definecolor{tudelft-turquoise}{cmyk}{0.82,0,0.21,0.08}
-\definecolor{tudelft-sky-blue}{cmyk}{0.45,0,0.06,0.06}
-\definecolor{tudelft-lavendel}{cmyk}{0.45,0.2,0,0.07}
-\definecolor{tudelft-orange}{cmyk}{0.02,0.56,0.84,0}
-\definecolor{tudelft-warm-purple}{cmyk}{0.58,1,0,0.02}
-\definecolor{tudelft-fuchsia}{cmyk}{0.19,1,0,0.19}
-\definecolor{tudelft-bright-green}{cmyk}{0.36,0,1,0}
-\definecolor{tudelft-yellow}{cmyk}{0.02,0,0.54,0}
 
 %% Use Atlarge blue as the color for titles, unless the 'print' option is
 %% specified, in which case we use anthracite, a dark gray, which is also used
@@ -270,7 +152,6 @@
 \definecolor{anthracite}{cmyk}{0,0,0,1}
 \if@print
     \colorlet{title}{chapter-blue}
-    %\colorlet{title}{anthracite}
 \else
     \colorlet{title}{chapter-blue}
 \fi
@@ -418,10 +299,8 @@
 %% Page style for title pages.
 \fancypagestyle{plain}{%
     \fancyhf{}
-    %\renewcommand*\headrulewidth{0pt}
     \renewcommand*\footrulewidth{0pt}
     \fancyhead{\cropmarks}
-    %\fancyfoot[C]{\titlefont\thepage}
     \fancyhead[LE]{\cropmarks\lthumb\titlefont\color{chapter-blue}\thepage}
     \fancyhead[RO]{\cropmarks\rthumb\titlefont\color{chapter-blue}\thepage}
 }
@@ -584,13 +463,6 @@
 \renewcommand*\LettrineTextFont{\titleshape}
 \newcommand*\dropcap[1]{%
     \lettrine[lines=2,findent=0.2em,nindent=0pt]{\color{drocap-color}#1}{}%
-}
-
-%% Create an unnumbered reference section.
-% \addto\captionsenglish{\renewcommand*\bibname{\color{black}References}}
-\newcommand*\references[1]{%
-    \bibliographystyle{dissertation}%
-    \bibliography{#1}%
 }
 
 %% Hyperlinks are cyan, except in print mode, when they are all black.
