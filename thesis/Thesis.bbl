@@ -7,17 +7,13 @@ P.L. Montgomery.
 
 \bibitem{rivest_method_1978}
 R.~L. Rivest, A.~Shamir, and L.~Adleman.
-\newblock A method for obtaining digital signatures and public-key
-  cryptosystems.
+\newblock A method for obtaining digital signatures and public-key cryptosystems.
 \newblock {\em Communications of the ACM}, 21(2):120--126, February 1978.
 
 \bibitem{shor_algorithms_1994}
 P.W. Shor.
-\newblock Algorithms for quantum computation: discrete logarithms and
-  factoring.
-\newblock In {\em Proceedings 35th {Annual} {Symposium} on {Foundations} of
-  {Computer} {Science}}, pages 124--134, Santa Fe, NM, USA, 1994. IEEE Comput.
-  Soc. Press.
+\newblock Algorithms for quantum computation: discrete logarithms and factoring.
+\newblock In {\em Proceedings 35th {Annual} {Symposium} on {Foundations} of {Computer} {Science}}, pages 124--134, Santa Fe, NM, USA, 1994. IEEE Comput. Soc. Press.
 
 \bibitem{albash_adiabatic_2018}
 Tameem Albash and Daniel~A. Lidar.
@@ -25,16 +21,13 @@ Tameem Albash and Daniel~A. Lidar.
 \newblock {\em Reviews of Modern Physics}, 90(1):015002, January 2018.
 
 \bibitem{cerezo_variational_2021}
-M.~Cerezo, Andrew Arrasmith, Ryan Babbush, Simon~C. Benjamin, Suguru Endo,
-  Keisuke Fujii, Jarrod~R. McClean, Kosuke Mitarai, Xiao Yuan, Lukasz Cincio,
-  and Patrick~J. Coles.
+M.~Cerezo, Andrew Arrasmith, Ryan Babbush, Simon~C. Benjamin, Suguru Endo, Keisuke Fujii, Jarrod~R. McClean, Kosuke Mitarai, Xiao Yuan, Lukasz Cincio, and Patrick~J. Coles.
 \newblock Variational {Quantum} {Algorithms}.
 \newblock {\em Nature Reviews Physics}, 3(9):625--644, August 2021.
 \newblock arXiv:2012.09265 [quant-ph].
 
 \bibitem{hegade_digitized_2021}
-Narendra~N. Hegade, Koushik Paul, Francisco Albarrán-Arriagada, Xi~Chen, and
-  Enrique Solano.
+Narendra~N. Hegade, Koushik Paul, Francisco Albarrán-Arriagada, Xi~Chen, and Enrique Solano.
 \newblock Digitized {Adiabatic} {Quantum} {Factorization}.
 \newblock {\em Physical Review A}, 104(5):L050403, November 2021.
 \newblock arXiv:2105.09480 [quant-ph].
@@ -51,10 +44,8 @@ M.~S. Sarandy, L.-A. Wu, and D.~A. Lidar.
 
 \bibitem{aharonov_adiabatic_2004}
 D.~Aharonov, W.~Van~Dam, J.~Kempe, Z.~Landau, S.~Lloyd, and O.~Regev.
-\newblock Adiabatic {Quantum} {Computation} is {Equivalent} to {Standard}
-  {Quantum} {Computation}.
-\newblock In {\em 45th {Annual} {IEEE} {Symposium} on {Foundations} of
-  {Computer} {Science}}, pages 42--51, Rome, Italy, 2004. IEEE.
+\newblock Adiabatic {Quantum} {Computation} is {Equivalent} to {Standard} {Quantum} {Computation}.
+\newblock In {\em 45th {Annual} {IEEE} {Symposium} on {Foundations} of {Computer} {Science}}, pages 42--51, Rome, Italy, 2004. IEEE.
 
 \bibitem{kadowaki_quantum_1998}
 Tadashi Kadowaki and Hidetoshi Nishimori.
@@ -69,14 +60,12 @@ Edward Farhi, Jeffrey Goldstone, and Sam Gutmann.
 
 \bibitem{zhou_quantum_2020}
 Leo Zhou, Sheng-Tao Wang, Soonwon Choi, Hannes Pichler, and Mikhail~D. Lukin.
-\newblock Quantum {Approximate} {Optimization} {Algorithm}: {Performance},
-  {Mechanism}, and {Implementation} on {Near}-{Term} {Devices}.
+\newblock Quantum {Approximate} {Optimization} {Algorithm}: {Performance}, {Mechanism}, and {Implementation} on {Near}-{Term} {Devices}.
 \newblock {\em Physical Review X}, 10(2):021067, June 2020.
 
 \bibitem{farhi_quantum_2019}
 Edward Farhi and Aram~W. Harrow.
-\newblock Quantum {Supremacy} through the {Quantum} {Approximate}
-  {Optimization} {Algorithm}, October 2019.
+\newblock Quantum {Supremacy} through the {Quantum} {Approximate} {Optimization} {Algorithm}, October 2019.
 \newblock arXiv:1602.07674 [quant-ph].
 
 \bibitem{ho_efficient_2019}
@@ -91,33 +80,25 @@ Eric~R. Anschuetz, Jonathan~P. Olson, Alán Aspuru-Guzik, and Yudong Cao.
 \newblock arXiv:1808.08927 [quant-ph].
 
 \bibitem{peng_quantum_2008}
-Xinhua Peng, Zeyang Liao, Nanyang Xu, Gan Qin, Xianyi Zhou, Dieter Suter, and
-  Jiangfeng Du.
-\newblock A {Quantum} {Adiabatic} {Algorithm} for {Factorization} and {Its}
-  {Experimental} {Implementation}.
+Xinhua Peng, Zeyang Liao, Nanyang Xu, Gan Qin, Xianyi Zhou, Dieter Suter, and Jiangfeng Du.
+\newblock A {Quantum} {Adiabatic} {Algorithm} for {Factorization} and {Its} {Experimental} {Implementation}.
 \newblock {\em Physical Review Letters}, 101(22):220405, November 2008.
 \newblock arXiv:0808.1935 [quant-ph].
 
 \bibitem{diez-valle_universal_2025}
-Pablo Díez-Valle, Fernando~J. Gómez-Ruiz, Diego Porras, and Juan~José
-  García-Ripoll.
-\newblock Universal {Resources} for {QAOA} and {Quantum} {Annealing}, June
-  2025.
+Pablo Díez-Valle, Fernando~J. Gómez-Ruiz, Diego Porras, and Juan~José García-Ripoll.
+\newblock Universal {Resources} for {QAOA} and {Quantum} {Annealing}, June 2025.
 \newblock arXiv:2506.03241 [quant-ph].
 
 \bibitem{karamlou_analyzing_2021}
-Amir~H. Karamlou, William~A. Simon, Amara Katabarwa, Travis~L. Scholten, Borja
-  Peropadre, and Yudong Cao.
-\newblock Analyzing the {Performance} of {Variational} {Quantum} {Factoring} on
-  a {Superconducting} {Quantum} {Processor}.
+Amir~H. Karamlou, William~A. Simon, Amara Katabarwa, Travis~L. Scholten, Borja Peropadre, and Yudong Cao.
+\newblock Analyzing the {Performance} of {Variational} {Quantum} {Factoring} on a {Superconducting} {Quantum} {Processor}.
 \newblock {\em npj Quantum Information}, 7(1):156, October 2021.
 \newblock arXiv:2012.07825 [quant-ph].
 
 \bibitem{blekos_review_2024}
-Kostas Blekos, Dean Brand, Andrea Ceschini, Chiao-Hui Chou, Rui-Hao Li, Komal
-  Pandya, and Alessandro Summer.
-\newblock A {Review} on {Quantum} {Approximate} {Optimization} {Algorithm} and
-  its {Variants}.
+Kostas Blekos, Dean Brand, Andrea Ceschini, Chiao-Hui Chou, Rui-Hao Li, Komal Pandya, and Alessandro Summer.
+\newblock A {Review} on {Quantum} {Approximate} {Optimization} {Algorithm} and its {Variants}.
 \newblock {\em Physics Reports}, 1068:1--66, June 2024.
 \newblock arXiv:2306.09198 [quant-ph].
 

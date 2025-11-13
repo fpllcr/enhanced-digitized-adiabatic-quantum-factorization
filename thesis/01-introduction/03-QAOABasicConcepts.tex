@@ -10,7 +10,7 @@ At its core, QAOA constructs a parametrized quantum state (ansatz) by sequential
     \item The mixing Hamiltonian $H_M$, which introduces transitions between computational
     basis states to enable exploration of the solution space. A common choice, justified by Eq.~\eqref{eq:transverse_field_hamiltonian}, is:
     \begin{equation}
-        \hat{H}_M = \sum_i \hat{\sigma}_i^x,
+        \hat{H}_M = - \sum_i \hat{\sigma}_i^x,
         \label{eq:mixing_hamiltonian}
     \end{equation}
     where $\hat{\sigma}_i^x$ is the Pauli-X operator acting on qubit $i$.
