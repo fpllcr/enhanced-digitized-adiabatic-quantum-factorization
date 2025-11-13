@@ -58,6 +58,7 @@ venv
 *.slg
 *.slo
 *.sls
+*.ist
 
 # Hyperref
 *.brf
