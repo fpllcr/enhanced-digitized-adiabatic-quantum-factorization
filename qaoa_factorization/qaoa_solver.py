@@ -31,9 +31,9 @@ class QAOASolver:
         Initialize QAOA solver for integer factorization.
 
         :param N: Number to factorize
-        :param p: Number of QAOA layers
-        :param problem_hamiltonian_gen: Function to generate the problem Hamiltonian
-        :param cost_hamiltonian_gen: Cost function to evaluate solutions
+        :param layers: Number of QAOA layers
+        :param problem_hamiltonian: Name of the problem Hamiltonian function (from hamiltonians module)
+        :param cost_hamiltonian: Name of the cost Hamiltonian function (from hamiltonians module)
         :param optimizer_method: Optimization method of scipy.optimize.minimize for parameter tuning
         """
         self.N = N
