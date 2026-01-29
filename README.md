@@ -25,3 +25,48 @@ This repository contains two main folders:
 * ***thesis***: LaTeX project for the Master's thesis.
 
 Have a look at the Master's thesis manuscript in the following [link](thesis/Thesis.pdf).
+
+---
+
+## Installation
+
+### Requirements
+- Python 3.11+
+
+### Setup
+```bash
+git clone https://github.com/fpllcr/enhanced-digitized-adiabatic-quantum-factorization
+cd enhanced-digitized-adiabatic-quantum-factorization
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Running an experiment
+```bash
+cd qaoa_factorization
+python main.py -e N15_standard -o BFGS
+```
+
+### Available options
+- `-e, --experiment`: Run a specific experiment configuration
+- `-b, --batch`: Batch processing for experiments of a given N
+- `-o, --optimizers`: Specify optimizers (default: all). Options: `Nelder-Mead`, `L-BFGS-B`, `BFGS`, `COBYLA`
+- `-v, --verbose`: Enable verbose output
+
+### Using the QAOASolver class
+See [`qaoa_factorization/notebooks/run_simulator.ipynb`](qaoa_factorization/notebooks/run_simulator.ipynb) for basic usage examples.
+
+## Reproducing Results
+
+1. Install dependencies as described above
+2. Run all experiments: `python main.py -a`
+3. Generate data files: Run [`notebooks/paper.ipynb`](qaoa_factorization/notebooks/paper.ipynb)
+
+## Contact
+
+[Felip Pellicer] - [fpellicer.q@proton.me]
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

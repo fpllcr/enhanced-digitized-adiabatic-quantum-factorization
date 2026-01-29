@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Enhanced Digitized Adiabatic Factorization Algorithm"
+authors:
+  - family-names: "Pellicer"
+    given-names: "Felip"
+    orcid: "https://orcid.org/0009-0002-3686-5586"
+repository-code: "https://github.com/fpllcr/enhanced-digitized-adiabatic-quantum-factorization"
+license: MIT
+preferred-citation:
+  type: thesis
+  title: "Enhanced Digitized Adiabatic Factorization Algorithm"
+  authors:
+    - family-names: "Pellicer"
+      given-names: "Felip"
+  year: "2026"
